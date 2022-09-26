@@ -1,7 +1,16 @@
-<header>
-    Page Header
+<header id="layout-header">
+    <nav>
+        <div class="mini-logo">
+            <p>
+                <a href='/'>
+                    fbclone
+                </a>
+            </p>
+        </div>
 
-    <ul>
+        <div class="auth-links">
+
+         <ul>
         <% if(locals.user) { %>
              <li>
                 <a href="/users/profile">
@@ -19,5 +28,7 @@
                 <a href="/users/sign-up">Sign Up</a>
             </li>
         <% } %>
-    </ul>
+        </ul>
+        </div>
+    </nav>
 </header>

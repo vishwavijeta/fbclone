@@ -13,8 +13,8 @@ const sassMiddleware = require('node-sass-middleware');
 const { transformAuthInfo } = require('passport');
 
 app.use(sassMiddleware({
-    src: '/assets/scss',
-    dest: '/assets/css',
+    src: './assets/scss',
+    dest: './assets/css',
     debug: transformAuthInfo,
     outputStyle: 'extended',
     prefix: '/css'
